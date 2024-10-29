@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  header {
+    background-color: #ff8c00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  /* Home Section */
+  #home {
+    background-color: #ffe5b4;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  #home h2 {
+    color: #ff8c00;
+  }
+  #home p {
+    font-size: 1.2em;
+  }
+  .team-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+
+  /* Players Section */
+  #players {
+    background-color: #ffcc80;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  #players h2 {
+    color: #ff8c00;
+    margin-bottom: 30px;
+  }
+  .players-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  .player {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .player:hover {
+    transform: translateY(-5px);
+  }
+  .player h3 {
+    color: #ff8c00;
+    margin-bottom: 10px;
+  }
+  .player p {
+    color: #333;
+  }
+
+  /* Match Schedule Section */
+  #schedule {
+    background-color: #ffcc99;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  #schedule h2 {
+    color: #ff8c00;
+    margin-bottom: 20px;
+  }
+  #schedule table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  #schedule table th, #schedule table td {
+    border: 1px solid #ff8c00;
+    padding: 10px;
+    text-align: center;
+  }
+  #schedule table th {
+    background-color: #ff8c00;
+    color: white;
+  }
+  #schedule table td {
+    background-color: white;
+  }
+
+  /* Fan Engagement Section */
+  #engagement {
+    background-color: #ffb366;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  #engagement h2 {
+    color: #ff8c00;
+    margin-bottom: 20px;
+  }
+  #engagement form {
+    display: inline-block;
+    background-color:#ffcc80;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #engagement form label {
+    display: block;
+    margin: 10px 0;
+  }
+  #engagement button {
+    background-color: #ff8c00;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #engagement button:hover {
+    background-color: #e67300;
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  footer .social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  footer .social-icons li {
+    margin: 0 10px;
+  }
+  footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+  }
+  footer .social-icons a:hover {
+    color: #ff8c00;
+  }
+  
+  /* Responsive Styles */
+@media (max-width: 600px) {
+    header nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    #home h2 {
+      font-size: 1.5em;
+    }
+  
+    #home p {
+      font-size: 1em;
+    }
+  
+    .players-list {
+      grid-template-columns: 1fr;
+    }
+  }
